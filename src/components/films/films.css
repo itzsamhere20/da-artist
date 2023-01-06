@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&display=swap');
+
+.films__container
+{
+    display:flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    width: 100%;
+    padding-bottom: 10%;
+    height: auto;
+}
+.heading
+{
+ display: flex;
+ width: 100%;
+ height: max-content;
+ margin: 5% 0 5% 0 ;
+ flex-direction: column;
+ align-items: center;
+ gap: 10px;
+}
+.heading span
+{
+    font-size: 0.95rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: jost;
+    color: rgb(56, 56, 56);
+
+}
+.heading h3
+{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-family: 'Roboto', serif;
+    color: rgb(53, 53, 53);
+
+
+}
+.heading p
+{
+    font-size: 0.95rem;
+    font-weight: 400;
+    letter-spacing: .5px;
+    width: 60%;
+    line-height: 25px;
+    font-family: jost;
+    color: rgb(88, 88, 88);
+    text-align: center;
+}
+
+.image-gallery 
+{
+    /* Mobile first */
+    display: flex;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .image-gallery .column 
+  {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .image-item img 
+  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+  }
+  
+ 
+  
+  /* overlay styles */
+  
+  .image-item {
+    position: relative;
+  
+  }
+  
+  .overlay {
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(36, 36, 36, 0.877);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+    /* center overlay content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .overlay span
+  {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    width: 100%;
+    top: 0;
+    padding: 5% 10% 5% 10%;
+    text-align: center;
+    line-height: 40px;
+    word-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    height: 50%;
+  }
+  .overlay__btn
+  {
+    display: flex;
+    width: max-content;
+    height: max-content;
+    border: none;
+    font-size: 0.9rem;
+    font-family: jost;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    padding: 2% 4% 2% 4%;
+    background-color: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.4s all linear;
+  }
+  
+  /* hover */
+  .image-item:hover .overlay {
+    transform: scale(1);
+  }
+  .overlay__btn:hover
+  {
+  
+   border: 1px solid whitesmoke; 
+  }
+  .hire
+  {
+    display: flex;
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 5% 0% 5%;
+  }
+  .hire p
+  { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    line-height: 52px;
+    font-family:roboto;
+    font-weight: 400;
+    width: 50%;
+    height: 100%;
+    color: rgb(53, 53, 53);
+}
+.hire__btn
+{ 
+  display: flex;
+  gap: 5%;
+  width: 40%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.hire__btn :nth-child(1)
+{
+display: flex;
+width: 25%;
+padding: 2%;
+font-size: 0.9rem;
+font-weight: 500;
+letter-spacing: 1px;
+font-family:jost;
+color: rgba(43, 43, 43, 0.63);
+text-transform: uppercase;
+justify-content: center;
+align-items: center;
+border: none;
+border-radius: 20px;
+box-shadow: 0px 0px 10px 0px rgb(197, 197, 197),
+ inset 0px 0px 10px 0px rgb(240, 240, 240);
+
+transition: 0.4s ease-in-out;
+}
+.hire__btn :nth-child(1):hover
+{
+  scale: 0.92;
+  background-color: rgb(238, 238, 238);
+  box-shadow: none;
+}
+
+.hire__btn :nth-child(2)
+{
+display: flex;
+width: 25%;
+height:auto;
+padding: 2%;
+font-size: 0.9rem;
+font-weight: 500;
+letter-spacing: 1px;
+font-family:jost;
+color: rgba(43, 43, 43, 0.63);
+text-transform: uppercase;
+justify-content: center;
+align-items: center;
+background-color: whitesmoke;
+border: none;
+border-radius: 20px;
+box-shadow: 5px 5px 10px 0px rgb(212, 212, 212),
+-3px -3px 15px 1px rgb(255, 255, 255),
+inset 2px -2px 5px 2px rgb(255, 255, 255),
+inset 3px 0px 10px 0px rgb(170, 170, 170),
+inset 3px 0px 10px 0px rgb(231, 231, 231);
+transition: 0.4s ease-in-out;
+}
+.hire__btn :nth-child(2):hover
+{
+  scale: 0.92;
+  background-color: rgb(238, 238, 238);
+}
+
+
+@media only screen and (max-width:970px)
+{
+
+ 
+  .heading
+  {
+   margin-top: 5%;
+   padding: 5%;
+   gap: 0px;
+  }
+  .heading span
+  {
+      font-size: 0.9rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: rgb(56, 56, 56);
+      
+  
+  }
+  .heading h3
+  {
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(56, 56, 56);
+
+  
+  
+  }
+  .heading p
+  {
+      font-size: 0.85rem;
+      font-weight: 400;
+      letter-spacing: 0px;
+      width: 60%;
+      line-height: 20px;
+      color: rgb(110, 110, 110); 
+  }
+  
+  .image-gallery 
+  {
+      /* Mobile first */
+      width: 90%;
+      margin: 0 5% 0 5%;
+      flex-direction: column;
+    }
+    
+    .image-gallery .column 
+    {
+      display: flex;
+      flex-direction: row;
+    
+    }
+    
+    /* overlay styles */
+    
+    .overlay span
+    {
+      font-size: 1.5rem;
+      padding: 5% 10% 5% 10%;
+      line-height: 40px;
+      word-spacing: 5px;
+      height: 50%;
+    }
+    .overlay__btn
+    {
+      font-size: 0.9rem;
+     
+      font-weight: 300;
+      letter-spacing: 1px;
+      padding: 2% 4% 2% 4%;
+      
+    }
+   
+    .overlay__btn:hover
+    {
+    
+     border: 1px solid whitesmoke; 
+    }
+    .hire
+    {
+     
+      width: 90%;
+      margin: 10% 5% 0% 5%;
+    }
+    .hire p
+    { 
+      font-size: 1.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      line-height: 40px;
+      font-weight: 700;
+  
+  }
+  .hire__btn
+  { 
+    display: flex;
+    gap: 5%;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .hire__btn :nth-child(1)
+  {
+ 
+    width: max-content;
+    padding: 3% 4% 3% 4%;
+    font-size: 1rem;
+    color: rgb(126, 126, 126);
+    border-radius: 40px;
+  }
+  
+  .hire__btn :nth-child(2)
+  {
+  
+    width: max-content;
+    padding: 3% 10% 3% 10%;
+    font-size: 1rem;
+    color: rgb(126, 126, 126);
+    border-radius: 40px;
+
+  }
+
+    
+    
+}
+
+
+/*------------------Small Tablet View -----------------------*/
+
+@media only screen and (max-width:640px)
+{
+    
+    
+  .heading span
+  {
+      font-size: 0.8rem;
+      
+  }
+  .heading h3
+  {
+    font-size: 1.8rem;
+    letter-spacing:0;
+    font-weight: 700;
+
+  
+  
+  }
+  .heading p
+  {
+      font-size: 0.8rem;
+      font-weight: 400;
+      width: 80%;
+      line-height: 19px;
+ 
+  }
+  
+  .image-gallery 
+  {
+      /* Mobile first */
+  
+      flex-direction: column;
+    }
+    
+    .image-gallery .column 
+    {
+      flex-direction: column;
+    
+    }
+  
+    
+   
+    
+    /* overlay styles */
+    
+
+    .overlay {
+      height: 99.2%;
+    }
+    
+   
+    .overlay span
+    {
+      font-size: 1.5rem;
+      padding: 5% 10% 5% 10%;
+      line-height: 40px;
+      word-spacing: 5px;
+      height: 50%;
+    }
+    .overlay__btn
+    {
+      font-size: 0.9rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+      padding: 2% 4% 2% 4%;
+      
+    }
+   
+    .hire
+    {
+      flex-direction: column;
+      margin: 5%;
+      text-align: center;
+    }
+    .hire p
+    { 
+      font-size: 1.5rem;
+      width: 100%;
+      letter-spacing: 0.5px;
+      line-height: 35px;
+      margin-bottom: 5%;
+      font-weight: 700;
+      color: rgb(56, 56, 56);
+  }
+  .hire__btn
+  { 
+    
+    width: 100%;
+    gap: 20px;
+  }
+  .hire__btn :nth-child(1)
+  {
+ 
+    padding: 2% 3% 2% 3%;
+    font-size: 0.9rem;
+  
+  }
+  
+  .hire__btn :nth-child(2)
+  {
+  
+    padding: 2% 8% 2% 8%;
+    font-size: 0.9rem;
+  }
+}
+
+/*------------------Mobile View -----------------------*/
+
+@media only screen and (max-width:480px)
+{  
+     
+  .heading span
+  {
+      font-size: 0.75rem;
+      
+  }
+  .heading h3
+  {
+    font-size: 2rem;  
+  }
+  .heading p
+  {
+      font-size: 0.9rem;
+      font-weight: 300;
+      font-style:italic;
+      color: rgba(128, 128, 128, 0.664);
+      font-family: jost;
+      width: 90%;
+      line-height: 20px;
+ 
+  }
+   
+    .hire p
+    { 
+      font-size: 1.3rem;
+      line-height: 32px;
+    }
+  .hire__btn
+  { 
+    
+    width: 100%;
+    gap: 15px;
+  }
+  .hire__btn :nth-child(1)
+  {
+ 
+    padding: 2.5% 3.5% 2.5% 3.5%;
+    font-size: 0.8rem;
+  
+  }
+  
+  .hire__btn :nth-child(2)
+  {
+  
+    padding: 2.5% 8.5% 2.5% 8.5%;
+    font-size: 0.8rem;
+  }
+
+}
+
+/*------------------Small screen Views -----------------------*/
+
+@media only screen and (max-width:390px)
+{
+    
+  .heading span
+  {
+      font-size: 0.65rem;
+      
+  }
+  .heading h3
+  {
+    font-size: 1.8rem;  
+  }
+  .heading p
+  {
+      font-size: 0.7rem;
+      font-weight: 400;
+      line-height: 15px;
+ 
+  }
+   
+  .hire p
+    { 
+      font-size: 1.1rem;
+      line-height: 28px;
+    }
+  .hire__btn
+  { 
+    
+    gap: 15px;
+  }
+  .hire__btn :nth-child(1)
+  {
+ 
+    padding: 2.7% 3.7% 2.7% 3.7%;
+    font-size: 0.75rem;
+  
+  }
+  
+  .hire__btn :nth-child(2)
+  {
+  
+    padding: 2.7% 8.7% 2.7% 8.7%;
+    font-size: 0.75rem;
+  }
+}
+
+/*------------------ Very Small screen View -----------------------*/
+
+
+@media only screen and (max-width:300px)
+{
+
+  .heading span
+  {
+      font-size: 0.6rem;
+      
+  }
+  .heading h3
+  {
+    font-size: 1.7rem;  
+  }
+  .heading p
+  {
+      font-size: 0.65rem;
+      font-weight: 400;
+      line-height: 14px;
+ 
+  }
+   
+  .hire p
+    { 
+      font-size: 1rem;
+      line-height: 25px;
+    }
+  .hire__btn
+  { 
+    
+    gap: 12px;
+  }
+  .hire__btn :nth-child(1)
+  {
+ 
+    padding: 3% 4% 3% 4%;
+    font-size: 0.7rem;
+  
+  }
+  
+  .hire__btn :nth-child(2)
+  {
+  
+    padding: 3% 7% 3% 7%;
+    font-size: 0.7rem;
+  }
+}
