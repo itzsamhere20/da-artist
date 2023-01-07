@@ -1,5 +1,6 @@
 import React from 'react'
 import "../films/films.css"
+import Atropos from 'atropos/react';
 import film1 from "../assets/film-1.jpg"
 import film2 from "../assets/film-2.jpg"
 import film3 from "../assets/film-3.jpg"
@@ -26,10 +27,16 @@ export default function Films() {
 
                 <div className="column">
                     <div className="image-item">
-                        <img src={film1} alt="" />
-                        <div className="overlay"><span>This last LAugh</span>
-                            <button className='overlay__btn' style={{ transition: ' 2s all ease-in-out' }}>View More</button>
-                        </div>
+                        <Atropos
+                            activeOffset={-40}
+                            shadowScale={1.05}
+
+                        >
+                            <img src={film1} alt="" data-atropos-offset="-5" />
+                            <div className="overlay" data-atropos-offset="-5" ><span>This last LAugh</span>
+                                <button className='overlay__btn' style={{ transition: ' 2s all ease-in-out' }}>View More</button>
+                            </div>
+                        </Atropos>
                     </div>
                     <div className="image-item">
                         <img src={film2} alt="" />

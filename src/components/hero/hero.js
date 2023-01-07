@@ -12,18 +12,18 @@ export default function Hero() {
         <div className='hero__container'>
 
 
+
             {/*-------------------------------- Hero image area -------------------- */}
-            <div style={{ width: '100%', height: '100%' }}>
-
-                <img src={hero} alt="hero-img" className='hero__img' />
 
 
-            </div>
+
+            <img src={hero} alt="hero-img" className='hero__img' />
+
 
             {/*-------------------------------- Hero heading area------------------- */}
 
             <div className="hero__heading">
-                <Parallax speed={10} >        we are the
+                <Parallax speed={4} >        we are the
                     <br />
                     <span>Artist</span>
                 </Parallax>
