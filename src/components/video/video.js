@@ -8,15 +8,15 @@ export default function video() {
             <div className="video__left">
                 <h3>A selection of some recent awards</h3>
                 <p>We live in a time when trends, fashion, and technology are constantly evolving. In the ever-changing hustle & bustle of this age.</p>
-                <button className='video__btn'>Learn more <BsArrowRightCircleFill className="video__icon" style={{ transition: '0.4s' }} /> </button>
+                <button className='video__btn'>Learn more <BsArrowRightCircleFill className="video__icon" /> </button>
             </div>
 
             <div className="video__right">
 
                 <ReactPlayer
                     controls={false}
-                    light={true}
-                    style={{ transition: '0.4s' }}
+                    light="https://images.pexels.com/photos/18495/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1/"
+
                     width={'100%'}
                     className="video__player"
                     url='https://www.youtube.com/watch?v=iOxzG3jjFkY' />

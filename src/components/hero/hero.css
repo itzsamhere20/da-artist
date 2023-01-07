@@ -75,7 +75,7 @@
     box-shadow: 5px 5px 10px 0px rgba(197, 197, 197, 0.692),
     -3px -2px 15px 1px rgba(255, 255, 255, 0.925),
     inset 1px 1px 10px 0px rgba(207, 207, 207, 0.637);
-    transition: 0.4s all ease-in-out;
+   
    
   }
   .links__btn a
@@ -84,7 +84,7 @@
       color: inherit;
   }
   .links__btn:hover {
-    scale: 0.9;
+    scale: 0.9; transition: 0.4s all ease-in-out;
     color: black;
     background-color: whitesmoke;
     box-shadow: 1px 1px 5px 2px rgba(202, 202, 202, 0.959);

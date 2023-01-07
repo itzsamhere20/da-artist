@@ -1,5 +1,6 @@
 import React from 'react'
 import "../films/films.css"
+import Parallax from 'react-rellax'
 import film1 from "../assets/film-1.jpg"
 import film2 from "../assets/film-2.jpg"
 import film3 from "../assets/film-3.jpg"
@@ -13,12 +14,15 @@ export default function Films() {
         <div className='films__container'>
 
             <div className="heading">
+
                 <span>my best films</span>
                 <h3>featured films</h3>
+
                 <p>
                     Doloremque, ad. Vero veniam dicta aliquid blanditiis ullam quibusdam, accusamus, eius quia molestias nihil temporibus nam praesentium odit repellat.
 
                 </p>
+
             </div>
 
             <div className="image-gallery">

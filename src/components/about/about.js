@@ -1,6 +1,5 @@
 import React from 'react'
 import "../about/about.css"
-import Parallax from 'react-rellax'
 import about from "../assets/about2.png"
 export default function About() {
     return (
@@ -20,10 +19,10 @@ export default function About() {
             {/*------------------About paragraph Section -----------------------*/}
 
             <div className="about__right">
-                <Parallax speed={2}>   <h3>We are a creative film and photo production company based in Pakistan</h3>
-                    <p>We are a creative film and photo production company hungry for quality in aesthetics. To create modern recognizable stuff we are working with a strong network of experienced professionals. We set up teams to shape your identity, push your idea and manage the workflow from pre- to post-production.</p>
-                    <button className="about__btn">Hire us Now</button>
-                </Parallax>
+                <h3>We are a creative film and photo production company based in Pakistan</h3>
+                <p>We are a creative film and photo production company hungry for quality in aesthetics. To create modern recognizable stuff we are working with a strong network of experienced professionals. We set up teams to shape your identity, push your idea and manage the workflow from pre- to post-production.</p>
+                <button className="about__btn">Hire us Now</button>
+
             </div>
         </div>
     )

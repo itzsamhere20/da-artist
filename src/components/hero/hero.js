@@ -15,15 +15,23 @@ export default function Hero() {
 
             {/*-------------------------------- Hero image area -------------------- */}
 
+            <img src={hero} alt="bnw  girl smoking cigrate" className='hero__img' />
 
-
-            <img src={hero} alt="hero-img" className='hero__img' />
 
 
             {/*-------------------------------- Hero heading area------------------- */}
 
             <div className="hero__heading">
-                <Parallax speed={4} >        we are the
+                <Parallax
+                    class="rellax"
+                    data-rellax-speed="7"
+                    data-rellax-percentage="0.5"
+                    data-rellax-xs-speed="4"
+                    data-rellax-mobile-speed="3"
+                    data-rellax-tablet-speed="-1"
+                    data-rellax-desktop-speed="-3"
+                >
+                    we are the
                     <br />
                     <span>Artist</span>
                 </Parallax>
@@ -33,9 +41,54 @@ export default function Hero() {
             {/*-------------------------------- Hero Social Links -------------------- */}
 
             <div className="hero__links">
-                <div className="links__btn"><a href='/' ><FaInstagram /></a></div>
-                <div className="links__btn"><a href='/' ><FiFacebook /></a></div>
-                <div className="links__btn"><a href='/' ><FiTwitter /></a></div>
+                <Parallax class="rellax"
+                    data-rellax-speed="7"
+                    data-rellax-xs-speed="3"
+                    data-rellax-mobile-speed="3"
+                    data-rellax-tablet-speed="-1"
+                    data-rellax-desktop-speed="-3"
+                    className="links__btn">
+
+                    <a href='/' >
+
+                        <FaInstagram />
+
+                    </a>
+
+                </Parallax>
+
+                <Parallax class="rellax"
+                    data-rellax-speed="7"
+                    data-rellax-xs-speed="2"
+                    data-rellax-mobile-speed="2"
+                    data-rellax-tablet-speed="-1"
+                    data-rellax-desktop-speed="-3"
+                    className="links__btn" >
+
+                    <a href='/' >
+
+                        <FiFacebook />
+
+                    </a>
+
+                </Parallax>
+
+                <Parallax class="rellax"
+                    data-rellax-speed="7"
+                    data-rellax-xs-speed="1"
+                    data-rellax-mobile-speed="1"
+                    data-rellax-tablet-speed="-1"
+                    data-rellax-desktop-speed="-3"
+                    className="links__btn" >
+
+                    <a href='/' >
+
+                        <FiTwitter />
+
+                    </a>
+
+                </Parallax>
+
             </div>
 
             {/*---------------------------------------------------- */}

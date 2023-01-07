@@ -66,6 +66,7 @@
 .video__icon
 {
     font-size: 1.1rem;
+    transition: 0.4s all ease-in-out;
 }
 .video__btn:hover 
 {
@@ -84,7 +85,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height:auto;
+    height:auto;  
+    overflow: hidden;
     width: 55%;
     margin-right: 5%;
 }
@@ -92,13 +94,14 @@
 {   
     display: flex;
     position: relative;
-    transition: 0.4s all ease-in-out;
+    transition: 0.8s all ease-in-out;
 }
 
 
 .video__player:hover
 {
-    scale: 1.01;
+    scale: 1.2;
+  
 }
 
 
