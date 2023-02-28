@@ -298,6 +298,8 @@
 }
 
 
+
+
 /*------------------------------Tablet View ------------- ---------------- */
 
 @media only screen and (max-Width:970px)
@@ -306,13 +308,13 @@
 
 .footer__container
 { 
-   height:140vh;
+   height:50vh;
 }    
 /*-------------------   Footer background Image ---------------- */
 
 .footer__img
 {
-  height:140vh;
+  height:50vh;
 }
 /*-------------------   Footer Section ---------------- */
 .footer__section
@@ -471,18 +473,49 @@
 
 /*------------------------------small Tablet View ------------- ---------------- */
 
-@media only screen and (max-Width:730px)
+@media only screen and (max-height:600px)
 {
-    /*-------------------  Main Footer Container ---------------- */
     .footer__container
     { 
-       height:170vh;
+       height:100vh;
     }    
        /*-------------------   Footer background Image ---------------- */
     
     .footer__img
     {
-      height:170%;
+      height:100%;
+    }
+
+
+}
+@media only screen and (max-height:450px)
+{
+    .footer__container
+    { 
+       height:140vh;
+    }    
+       /*-------------------   Footer background Image ---------------- */
+    
+    .footer__img
+    {
+      height:140%;
+    }
+
+
+}
+
+@media only screen and (max-Width:730px)
+{
+    /*-------------------  Main Footer Container ---------------- */
+    .footer__container
+    { 
+       height:50vh;
+    }    
+       /*-------------------   Footer background Image ---------------- */
+    
+    .footer__img
+    {
+      height:50%;
     }
 
 /*-------------------   Footer Section ---------------- */
@@ -743,7 +776,7 @@
 
 
 
-@media only screen and (max-Width:480px)
+@media only screen and (max-Width:450px)
 {
     /*-------------------  Main Footer Container ---------------- */
 
@@ -751,7 +784,7 @@
 {
     flex-direction: column;
     width: 100%;
-    height:115vh;
+    height:120vh;
    
 
 
@@ -761,7 +794,7 @@
 .footer__img
 {
    
-    height:115vh;
+    height:120vh;
    
 }
 /*-------------------   Footer Section ---------------- */
@@ -947,8 +980,21 @@
 /*----------------------------------- small Mobile View ----------------------------------*/
 
 
+@media only screen and (max-height:450px)
+{
+    .footer__container
+    { 
+       height:150vh;
+    }    
+       /*-------------------   Footer background Image ---------------- */
+    
+    .footer__img
+    {
+      height:150%;
+    }
 
 
+}
 
 
 @media only screen and (max-Width:390px)
@@ -1094,7 +1140,6 @@
 }
 
 
-
                                                                                                   
 
 
@@ -1106,14 +1151,14 @@
 
 
 
-@media only screen and (max-Width:300px)
+@media only screen and (max-Width:320px)
 {
     /*-------------------  Main Footer Container ---------------- */
 
 .footer__container
 {
     
-    height:118vh;
+    height:155vh;
    
 
 
@@ -1123,7 +1168,7 @@
 .footer__img
 {
    
-    height:118vh;
+    height:155vh;
    
 }
 /*-------------------   Footer Section ---------------- */
